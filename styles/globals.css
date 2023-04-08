@@ -1,0 +1,4 @@
+@import url("http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
