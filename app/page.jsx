@@ -2,19 +2,8 @@ import { getSupaPosts } from "../lib/getSupaPosts";
 import PostCard from "../components/PostCard";
 import Pagination from "../components/Pagination";
 
-interface Post {
-  slug: string;
-  content: string;
-  data: {
-    title: string;
-    excerpt: string;
-    date: string;
-    published: boolean;
-  };
-}
-
 export default async function Home() {
-  const posts: Post[] = await getSupaPosts();
+  const posts = await getSupaPosts();
   return (
     <main>
       <div>

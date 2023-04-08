@@ -1,13 +1,7 @@
 import Link from "next/link";
 import dayjs from "dayjs";
 import Image from "next/image";
-interface Post {
-  title: string;
-  slug: string;
-  date: string;
-  excerpt: string;
-}
-export default function PostCard({ title, slug, date, excerpt }: Post) {
+export default function PostCard({ title, slug, date, excerpt }) {
   return (
     <div className="my-10">
       <Link href={`../posts/${slug}`}>

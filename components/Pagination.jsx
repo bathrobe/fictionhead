@@ -29,7 +29,7 @@ export default function Pagination({
     return allPosts.slice(startIndex, endIndex);
   };
 
-  const range = (min: number, max: number) =>
+  const range = (min, max) =>
     [...Array(max - min + 1).keys()].map((i) => i + min);
 
   const getPaginationGroup = () => {

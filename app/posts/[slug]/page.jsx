@@ -13,12 +13,8 @@ export async function generateStaticParams() {
     slug: post.id,
   }));
 }
-interface PostParams {
-  params: {
-    slug: string;
-  };
-}
-export default async function Post({ params }: PostParams) {
+
+export default async function Post({ params }) {
   let post = await getSupaPostById(params.slug);
   post.tags = [];
   post = post[0];
